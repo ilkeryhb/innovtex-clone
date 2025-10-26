@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+
+{% set title = 'Blog & Haberler | innvotex' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Blog & Haberler</h1>
+                <p class="lead text-secondary mb-4">Fason imalat, üretim teknolojileri ve sektör haberleri hakkında güncel bilgiler.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-3 p-5 text-center">
+                    <i class="fas fa-newspaper fa-5x text-secondary mb-3"></i>
+                    <p class="text-muted">Sektördeki Gelişmeler</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Yazıları -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <!-- Ana İçerik -->
+            <div class="col-lg-8">
+                <!-- Öne Çıkan Yazı -->
+                <div class="card border-0 shadow-lg mb-5">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="bg-dark rounded-start" style="height: 100%; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-star fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body p-4 d-flex flex-column h-100">
+                                <span class="badge bg-primary mb-3">Öne Çıkan</span>
+                                <h3 class="card-title fw-bold mb-3">Fason İmalat Sektöründe Dijital Dönüşüm</h3>
+                                <p class="card-text text-secondary flex-grow-1">Endüstri 4.0 ile birlikte fason imalat sektöründe yaşanan dijital dönüşüm süreçleri ve bu sürecin işletmelere etkileri.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">2 gün önce</small>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Yazıları Grid -->
+                <div class="row g-4">
+                    <!-- Blog Yazısı 1 -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="bg-secondary" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-industry fa-3x text-white"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">Üretim</span>
+                                <h5 class="card-title fw-bold mb-3">Kalite Kontrol Süreçlerinde Yenilikler</h5>
+                                <p class="card-text text-secondary">Modern kalite kontrol yöntemleri ve otomasyon sistemlerinin üretim verimliliğine etkisi.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">1 hafta önce</small>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Yazısı 2 -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="bg-dark" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-leaf fa-3x text-white"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <span class="badge bg-success mb-2">Sürdürülebilirlik</span>
+                                <h5 class="card-title fw-bold mb-3">Sürdürülebilir Üretim Modelleri</h5>
+                                <p class="card-text text-secondary">Çevre dostu üretim metodları ve sürdürülebilir iş modellerinin geleceği.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">2 hafta önce</small>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Yazısı 3 -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="bg-primary" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-robot fa-3x text-white"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning mb-2">Teknoloji</span>
+                                <h5 class="card-title fw-bold mb-3">Otomasyon ve Yapay Zeka</h5>
+                                <p class="card-text text-secondary">Üretim hatlarında yapay zeka ve otomasyon sistemlerinin entegrasyonu.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">3 hafta önce</small>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Yazısı 4 -->
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="bg-info" style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-chart-line fa-3x text-white"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <span class="badge bg-info mb-2">Pazar Analizi</span>
+                                <h5 class="card-title fw-bold mb-3">2024 Üretim Trendleri</h5>
+                                <p class="card-text text-secondary">Küresel üretim sektöründeki yeni trendler ve Türkiye'ye yansımaları.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">1 ay önce</small>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sayfalama -->
+                <nav aria-label="Blog sayfalama" class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Önceki</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Sonraki</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Arama Kutusu -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Arama</h6>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Blog ara...">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kategoriler -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Kategoriler</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none text-secondary d-flex justify-content-between">
+                                    <span>Üretim Teknolojileri</span>
+                                    <span class="badge bg-light text-dark">12</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none text-secondary d-flex justify-content-between">
+                                    <span>Kalite Kontrol</span>
+                                    <span class="badge bg-light text-dark">8</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none text-secondary d-flex justify-content-between">
+                                    <span>Sürdürülebilirlik</span>
+                                    <span class="badge bg-light text-dark">5</span>
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none text-secondary d-flex justify-content-between">
+                                    <span>Pazar Analizleri</span>
+                                    <span class="badge bg-light text-dark">7</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none text-secondary d-flex justify-content-between">
+                                    <span>Teknoloji</span>
+                                    <span class="badge bg-light text-dark">10</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Son Yazılar -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Son Yazılar</h6>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-3">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Fason Üretimde Maliyet Optimizasyonu</h6>
+                                </div>
+                                <small class="text-muted">3 gün önce</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-3">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Akıllı Fabrika Sistemleri</h6>
+                                </div>
+                                <small class="text-muted">1 hafta önce</small>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-3">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Üretimde Enerji Verimliliği</h6>
+                                </div>
+                                <small class="text-muted">2 hafta önce</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Etiketler -->
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h6 class="fw-bold mb-3">Etiketler</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-light text-dark border">#üretim</span>
+                            <span class="badge bg-light text-dark border">#teknoloji</span>
+                            <span class="badge bg-light text-dark border">#kalite</span>
+                            <span class="badge bg-light text-dark border">#sürdürülebilirlik</span>
+                            <span class="badge bg-light text-dark border">#endüstri4.0</span>
+                            <span class="badge bg-light text-dark border">#otomasyon</span>
+                            <span class="badge bg-light text-dark border">#yapayzeka</span>
+                            <span class="badge bg-light text-dark border">#verimlilik</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bülten Aboneliği -->
+<section class="py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="fw-bold mb-3">Bültenimize Abone Olun</h3>
+                <p class="text-light mb-4">Sektör haberleri ve güncel gelişmelerden haberdar olmak için e-posta adresinizi bırakın.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="input-group input-group-lg">
+                            <input type="email" class="form-control" placeholder="E-posta adresiniz">
+                            <button class="btn btn-primary" type="button">Abone Ol</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

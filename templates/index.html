@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% set title = 'Markanızı Zirveye Taşıyın | innvotex' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">Markanızı Zirveye Taşıyın</h1>
+                <p class="lead text-secondary mb-4">Profesyonel fason imalat çözümleriyle markanız için kaliteli, sürdürülebilir ve yenilikçi üretim hizmetleri sunuyoruz.</p>
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('iletisim') }}" class="btn btn-primary btn-lg">Hemen Teklif Alın</a>
+                    <a href="#services" class="btn btn-outline-dark btn-lg">Hizmetlerimiz</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-3 text-center custom-image-container">
+                    <img src="{{ url_for('static', filename='backgrounds/hero.png') }}" 
+                         alt="Profesyonel Üretim Çözümleri" 
+                         class="img-fluid custom-image"
+                         onerror="this.src='https://placehold.co/600x400/f8f9fa/666?text=INNVOTEX'">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hizmetler Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">Neden innvotex?</h2>
+            <p class="text-secondary lead">Kalite, yenilik ve güvenin birleştiği nokta</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-medal fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Yüksek Kalite</h5>
+                        <p class="text-muted">Uluslararası standartlarda kalite kontrol süreçleriyle üretim</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Hızlı Üretim</h5>
+                        <p class="text-muted">Modern ekipmanlarla hızlı ve verimli üretim süreçleri</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Uzman Ekip</h5>
+                        <p class="text-muted">Deneyimli kadromuzla profesyonel çözüm ortaklığı</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Üretim Adımları Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="custom-image-container rounded-3">
+                    <img src="{{ url_for('static', filename='backgrounds/uretim.png') }}" 
+                         alt="Üretim Süreçleri" 
+                         class="img-fluid custom-image"
+                         onerror="this.src='https://placehold.co/600x400/6c757d/fff?text=Üretim+Süreçleri'">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4">Üretim Adımları</h2>
+                <p class="text-secondary mb-4">Profesyonel fason imalat sürecimiz, markanızın ihtiyaçlarına özel olarak tasarlanmış adımlardan oluşur. Her aşamada kalite ve verimlilik ön plandadır.</p>
+                <ul class="list-unstyled text-secondary mb-4">
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>İhtiyaç analizi ve planlama</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Tasarım ve prototip geliştirme</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Malzeme seçimi ve tedarik</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Seri üretim ve kalite kontrol</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Paketleme ve teslimat</li>
+                </ul>
+                <a href="{{ url_for('uretim') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-eye me-2"></i>İnceleyin
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- İş Ortaklarımız Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <h2 class="fw-bold mb-4">İş Ortaklarımız</h2>
+                <p class="text-secondary mb-4">Sektördeki güvenilir markalarla kurduğumuz uzun soluklu iş birlikleri sayesinde, en kaliteli ürünleri en uygun maliyetlerle sunuyoruz.</p>
+                <div class="row text-center">
+                    <div class="col-4 mb-3">
+                        <div class="bg-white rounded p-3 shadow-sm">
+                            <i class="fas fa-handshake fa-2x text-primary mb-2"></i>
+                            <small class="d-block fw-bold">50+</small>
+                            <small class="text-muted">İş Ortağı</small>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="bg-white rounded p-3 shadow-sm">
+                            <i class="fas fa-project-diagram fa-2x text-primary mb-2"></i>
+                            <small class="d-block fw-bold">100+</small>
+                            <small class="text-muted">Proje</small>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="bg-white rounded p-3 shadow-sm">
+                            <i class="fas fa-award fa-2x text-primary mb-2"></i>
+                            <small class="d-block fw-bold">10+</small>
+                            <small class="text-muted">Sektör Ödülü</small>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url_for('is_ortaklarimiz') }}" class="btn btn-primary btn-lg mt-3">
+                    <i class="fas fa-eye me-2"></i>İnceleyin
+                </a>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="custom-image-container rounded-3">
+                    <img src="{{ url_for('static', filename='backgrounds/is-ortaklari.png') }}" 
+                         alt="Güvenilir İş Birlikleri" 
+                         class="img-fluid custom-image"
+                         onerror="this.src='https://placehold.co/600x400/343a40/fff?text=İş+Birlikleri'">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hakkımızda Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="custom-image-container rounded-3">
+                    <img src="{{ url_for('static', filename='backgrounds/hakkimizda.png') }}" 
+                         alt="Hakkımızda" 
+                         class="img-fluid custom-image"
+                         onerror="this.src='https://placehold.co/600x400/007bff/fff?text=Hakkımızda'">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4">Hakkımızda</h2>
+                <p class="text-secondary mb-4">innvotex olarak, sektördeki 10 yılı aşkın deneyimimizle müşterilerimize en kaliteli fason imalat çözümlerini sunuyoruz. Yenilikçi yaklaşımımız ve uzman ekibimizle markanızın başarısı için çalışıyoruz.</p>
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-calendar-alt text-primary me-2"></i>
+                            <div>
+                                <strong>10+ Yıl</strong>
+                                <div class="text-muted small">Deneyim</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-users text-primary me-2"></i>
+                            <div>
+                                <strong>50+</strong>
+                                <div class="text-muted small">Uzman Ekip</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url_for('hakkimizda') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-eye me-2"></i>İnceleyin
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Referanslar Section -->
+<section class="py-5 bg-light">
+    <div class="container-fluid px-0">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">Güvenilen Markalar</h2>
+            <p class="text-secondary">Sektördeki güvenilir markalarla çalışıyoruz</p>
+        </div>
+        
+        <div class="logo-carousel-container">
+            <div class="logo-carousel-track">
+                {% for i in range(2) %}
+                    <div class="logo-slide">
+                        {% for logo_num in range(1, 31) %}
+                        <div class="logo-item">
+                            <a href="#" class="logo-link" data-logo="{{ logo_num }}">
+                                <img src="{{ url_for('static', filename='backgrounds/logolar/' ~ logo_num ~ '.png') }}" 
+                                     alt="Marka {{ logo_num }}" 
+                                     class="img-fluid logo-brand"
+                                     onerror="this.style.display='none'">
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

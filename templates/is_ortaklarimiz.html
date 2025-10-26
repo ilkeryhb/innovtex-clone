@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% set title = 'İş Ortaklarımız | innvotex' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">İş Ortaklarımız</h1>
+                <p class="lead text-secondary mb-4">Sektördeki güvenilir markalarla kurduğumuz başarılı iş birlikleri ve referanslarımız.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-3 p-5 text-center">
+                    <i class="fas fa-handshake fa-5x text-secondary mb-3"></i>
+                    <p class="text-muted">Güvenilir İş Birlikleri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- İş Ortakları Grid -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">İş Ortaklarımız</h2>
+            <p class="text-secondary lead">Birlikte büyüdüğümüz değerli markalar</p>
+        </div>
+
+        <div class="row g-4">
+            {% for i in range(12) %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="bg-white rounded p-4 mb-3 border">
+                            <i class="fas fa-building fa-3x text-secondary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Marka {{ i+1 }}</h5>
+                        <p class="text-muted small">{% if i % 3 == 0 %}Tekstil{% elif i % 3 == 1 %}Otomotiv{% else %}Elektronik{% endif %} Sektörü</p>
+                        <span class="badge bg-primary">{% if i < 4 %}5+ Yıl{% elif i < 8 %}3+ Yıl{% else %}1+ Yıl{% endif %}</span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- İstatistikler -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <h3 class="text-primary fw-bold">50+</h3>
+                        <p class="text-muted mb-0">İş Ortağı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <h3 class="text-primary fw-bold">100+</h3>
+                        <p class="text-muted mb-0">Tamamlanan Proje</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <h3 class="text-primary fw-bold">10+</h3>
+                        <p class="text-muted mb-0">Yıllık Deneyim</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <h3 class="text-primary fw-bold">15+</h3>
+                        <p class="text-muted mb-0">Ülke</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
