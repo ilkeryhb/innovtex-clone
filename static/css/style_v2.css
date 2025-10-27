@@ -332,6 +332,12 @@ footer .logo-img {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.contact-icon:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
 }
 
 /* === FOOTER STYLES === */
@@ -632,236 +638,337 @@ footer .logo-img {
     }
 }
 
-/* === CONTACT STYLES === */
-.contact-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color);
-}
-
-.contact-icon:hover {
-    background-color: #c82333; /* Daha koyu ton */
-    transform: scale(1.05);
-}
-
-/* İletişim formu butonları */
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-primary:hover {
-    background-color: #c82333;
-    border-color: #c82333;
-}
-
-.btn-outline-primary {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-outline-primary:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: #fff;
-}
-
-/* Form focus rengi */
-.form-control:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-}
-
-/* Check ikonları */
-.fa-check.text-primary {
-    color: var(--primary-color) !important;
-}
-
-/* Alert renkleri */
-.alert-success {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-    color: #155724;
-}
-
-.alert-danger {
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    color: #721c24;
-}
-
-/* === MOBILE RESPONSIVE STYLES === */
+/* === MOBILE FIXES === */
 @media (max-width: 768px) {
-    /* Hero section mobil */
-    .hero-section {
-        padding: 60px 0;
-        text-align: center;
+    /* 1. Logo ortalama */
+    .navbar-brand.mx-auto {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: auto !important;
     }
     
-    .hero-section .display-4 {
-        font-size: 2rem;
-        line-height: 1.2;
+    /* 2. İstatistik kartları - 10+ Sektör Ödülü */
+    .bg-white.rounded.p-3.shadow-sm {
+        min-height: 85px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 12px !important;
+        text-align: center !important;
     }
     
-    .hero-section .lead {
-        font-size: 1.1rem;
+    .bg-white.rounded.p-3.shadow-sm small {
+        line-height: 1.2 !important;
+        font-size: 0.75rem !important;
     }
     
-    .hero-section .btn-lg {
-        padding: 10px 20px;
-        font-size: 1rem;
-        margin: 5px;
+    .bg-white.rounded.p-3.shadow-sm .fa-2x {
+        font-size: 1.3rem !important;
+        margin-bottom: 5px !important;
     }
     
-    /* Navbar mobil */
-    .navbar-brand .logo-img {
-        height: 40px;
+    /* 3. Hakkımızda ikonları - 10+ Yıl ve 50+ Uzman Ekip */
+    .d-flex.align-items-center.mb-3 {
+        justify-content: center !important;
+        text-align: center !important;
+        flex-direction: column !important;
     }
     
-    .pt-5 {
-        padding-top: 5rem;
+    .d-flex.align-items-center.mb-3 .me-2 {
+        margin-right: 0 !important;
+        margin-bottom: 8px !important;
     }
     
-    /* Kartlar mobil */
-    .card {
-        margin-bottom: 20px;
+    /* 4. Blog badge'leri - Kırmızı yazılar */
+    .badge {
+        font-size: 0.65rem !important;
+        padding: 3px 6px !important;
+        margin-bottom: 8px !important;
+        display: inline-block !important;
     }
     
-    /* Resim konteynerları mobil */
-    .custom-image-container {
-        height: 250px;
-        margin-bottom: 30px;
+    .card-title {
+        font-size: 1rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 8px !important;
     }
     
-    /* Logo kaydırıcı mobil */
-    .logo-brand {
-        height: 50px;
-        max-width: 120px;
-        min-width: 100px;
+    /* 5. Üretim daireleri - Mavi daireler */
+    .bg-primary.rounded-circle.mx-auto.mb-3 {
+        width: 55px !important;
+        height: 55px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 15px !important;
     }
     
-    .logo-item {
-        margin: 0 20px;
+    .bg-primary.rounded-circle.mx-auto.mb-3 span {
+        font-size: 0.9rem !important;
+        font-weight: bold !important;
     }
     
-    .logo-link {
-        padding: 15px;
+    /* 6. İş Ortakları - Kırmızı istatistikler */
+    .row.text-center .col-4 {
+        margin-bottom: 15px !important;
+    }
+    
+    /* 7. Tarihçe daireleri - Mavi daireler */
+    .timeline-year {
+        width: 45px !important;
+        height: 45px !important;
+        left: -22px !important;
+        font-size: 0.7rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .timeline-content {
+        margin-left: 30px !important;
+        padding: 12px !important;
+    }
+    
+    /* Hero section mobil iyileştirme */
+    .hero-section .row.align-items-center {
+        text-align: center !important;
+    }
+    
+    .hero-section .d-flex.gap-3 {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .hero-section .btn {
+        width: 100% !important;
+        max-width: 250px !important;
+        margin: 5px 0 !important;
     }
     
     /* Buton grupları mobil */
     .d-flex.gap-3 {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column !important;
+        align-items: center !important;
     }
     
     .d-flex.gap-3 .btn {
-        width: 100%;
-        max-width: 280px;
-        margin: 5px 0;
-    }
-    
-    /* İstatistik kartları mobil */
-    .row.text-center .col-md-3 {
-        margin-bottom: 15px;
-    }
-    
-    /* İletişim formu mobil */
-    .card-body.p-5 {
-        padding: 1.5rem !important;
-    }
-    
-    /* Blog grid mobil */
-    .col-md-6 {
-        margin-bottom: 20px;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 5px 0 !important;
     }
 }
 
-@media (max-width: 576px) {
-    /* Çok küçük ekranlar */
-    .hero-section {
-        padding: 40px 0;
-    }
-    
-    .hero-section .display-4 {
-        font-size: 1.8rem;
-    }
-    
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    /* Logo kaydırıcı çok küçük */
-    .logo-brand {
-        height: 40px;
-        max-width: 100px;
-        min-width: 80px;
-    }
-    
-    .logo-item {
-        margin: 0 15px;
-    }
-    
-    /* Navbar çok küçük */
-    .navbar-brand .logo-img {
-        height: 35px;
-    }
-    
-    /* Kart padding'leri */
-    .card-body.p-4 {
-        padding: 1rem !important;
-    }
-    
-    /* Başlıklar */
-    h1, h2, h3 {
-        word-wrap: break-word;
-    }
-    
-    /* Butonlar */
-    .btn-lg {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
+/* Göz ikonu beyaz */
+.btn-primary .fa-eye {
+    color: white !important;
+}
+
+.btn-primary:hover .fa-eye {
+    color: white !important;
 }
 
 /* Özel mobil düzenlemeler */
 @media (max-width: 768px) {
     /* Resim ve text yan yana olan bölümler */
     .row.align-items-center {
-        text-align: center;
+        text-align: center !important;
     }
     
     .row.align-items-center .col-lg-6 {
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
     }
     
     /* İstatistik grid */
     .row.text-center .col-4 {
-        margin-bottom: 15px;
+        margin-bottom: 15px !important;
     }
     
     /* Footer mobil */
     footer .row .col-lg-4 {
-        margin-bottom: 30px;
-        text-align: center;
+        margin-bottom: 30px !important;
+        text-align: center !important;
     }
     
     /* Form grupları */
     .form-row {
-        margin-bottom: 15px;
+        margin-bottom: 15px !important;
+    }
+    
+    /* Kart içerikleri */
+    .card-body {
+        padding: 1rem !important;
     }
 }
 
 /* Tablet düzenlemeleri */
 @media (max-width: 992px) and (min-width: 769px) {
     .hero-section .display-4 {
-        font-size: 2.2rem;
+        font-size: 2.2rem !important;
     }
     
     .custom-image-container {
-        height: 300px;
+        height: 300px !important;
+    }
+}
+
+/* Çok küçük ekranlar için ek düzenlemeler */
+@media (max-width: 375px) {
+    .navbar-brand .logo-img {
+        height: 35px !important;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 1.6rem !important;
+    }
+    
+    .bg-white.rounded.p-3.shadow-sm {
+        min-height: 75px !important;
+        padding: 8px !important;
+    }
+    
+    .logo-brand {
+        height: 35px !important;
+        max-width: 90px !important;
+        min-width: 70px !important;
+    }
+}
+
+/* === 🔧 Mobil Görünüm Genel Düzeltmeler === */
+@media (max-width: 768px) {
+
+    /* 1️⃣ LOGO ortalama */
+    .navbar-brand.mx-auto {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: auto !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    /* 2️⃣ 10+ Sektör Ödülü hizalaması */
+    .bg-white.rounded.p-3.shadow-sm {
+        min-height: 100px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 15px !important;
+        margin: 0 auto !important;
+    }
+
+    .bg-white.rounded.p-3.shadow-sm small {
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+        white-space: normal !important;
+    }
+
+    /* 3️⃣ Göz ikonu (inceleyin butonları) beyaz görünüm */
+    .btn-primary .fa-eye {
+        color: #fff !important;
+    }
+    .btn-primary:hover .fa-eye {
+        color: #fff !important;
+    }
+
+    /* 4️⃣ Hakkımızda 10+ yıl ve 50+ ekip hizalama */
+    .d-flex.align-items-center.mb-3 {
+        justify-content: center !important;
+        text-align: center !important;
+        flex-direction: column !important;
+    }
+    .d-flex.align-items-center.mb-3 .me-2 {
+        margin-right: 0 !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* 5️⃣ Blog kırmızı başlık boyut ve hizalama */
+    .badge.bg-danger, 
+    .badge.text-bg-danger {
+        font-size: 0.75rem !important;
+        padding: 4px 10px !important;
+        margin-bottom: 5px !important;
+        display: inline-block !important;
+    }
+
+    .card-title {
+        font-size: 1.1rem !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+    }
+
+    /* 6️⃣ Üretim sayfası – mavi ikonlar */
+    .bg-primary.rounded-circle.mx-auto.mb-3 {
+        width: 60px !important;
+        height: 60px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        margin: 10px auto !important;
+    }
+    .bg-primary.rounded-circle.mx-auto.mb-3 span {
+        color: #fff !important;
+        font-weight: bold !important;
+        font-size: 1rem !important;
+    }
+
+    /* 7️⃣ İş ortakları kısmı – kırmızı istatistikler */
+    .row.text-center .col-4 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 20px !important;
+    }
+
+    .row.text-center .col-4 h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* 8️⃣ Hakkımızda sayfası – tarihçe mavi daireler */
+    .timeline-year {
+        width: 50px !important;
+        height: 50px !important;
+        border-radius: 50% !important;
+        left: -25px !important;
+        top: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 0.8rem !important;
+    }
+    .timeline-content {
+        margin-left: 40px !important;
+        padding: 15px !important;
+        text-align: left !important;
+    }
+
+    /* 9️⃣ Genel yazı boyutları */
+    h2, h3, h4 {
+        text-align: center !important;
+    }
+
+    /* 1️⃣0️⃣ Kart ikonları hizalama */
+    .fa-2x {
+        display: block !important;
+        text-align: center !important;
+        margin: 0 auto 8px auto !important;
+    }
+
+    /* 1️⃣1️⃣ Blog görüntü kartları */
+    .blog-card {
+        text-align: center !important;
+    }
+    .blog-card img {
+        width: 100% !important;
+        border-radius: 10px !important;
     }
 }
