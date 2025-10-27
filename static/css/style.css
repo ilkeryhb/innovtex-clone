@@ -692,3 +692,176 @@ footer .logo-img {
     border-color: #f5c6cb;
     color: #721c24;
 }
+
+/* === MOBILE RESPONSIVE STYLES === */
+@media (max-width: 768px) {
+    /* Hero section mobil */
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+    
+    .hero-section .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+    
+    /* Navbar mobil */
+    .navbar-brand .logo-img {
+        height: 40px;
+    }
+    
+    .pt-5 {
+        padding-top: 5rem;
+    }
+    
+    /* Kartlar mobil */
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    /* Resim konteynerları mobil */
+    .custom-image-container {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    
+    /* Logo kaydırıcı mobil */
+    .logo-brand {
+        height: 50px;
+        max-width: 120px;
+        min-width: 100px;
+    }
+    
+    .logo-item {
+        margin: 0 20px;
+    }
+    
+    .logo-link {
+        padding: 15px;
+    }
+    
+    /* Buton grupları mobil */
+    .d-flex.gap-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .d-flex.gap-3 .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 5px 0;
+    }
+    
+    /* İstatistik kartları mobil */
+    .row.text-center .col-md-3 {
+        margin-bottom: 15px;
+    }
+    
+    /* İletişim formu mobil */
+    .card-body.p-5 {
+        padding: 1.5rem !important;
+    }
+    
+    /* Blog grid mobil */
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Çok küçük ekranlar */
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-section .display-4 {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Logo kaydırıcı çok küçük */
+    .logo-brand {
+        height: 40px;
+        max-width: 100px;
+        min-width: 80px;
+    }
+    
+    .logo-item {
+        margin: 0 15px;
+    }
+    
+    /* Navbar çok küçük */
+    .navbar-brand .logo-img {
+        height: 35px;
+    }
+    
+    /* Kart padding'leri */
+    .card-body.p-4 {
+        padding: 1rem !important;
+    }
+    
+    /* Başlıklar */
+    h1, h2, h3 {
+        word-wrap: break-word;
+    }
+    
+    /* Butonlar */
+    .btn-lg {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Özel mobil düzenlemeler */
+@media (max-width: 768px) {
+    /* Resim ve text yan yana olan bölümler */
+    .row.align-items-center {
+        text-align: center;
+    }
+    
+    .row.align-items-center .col-lg-6 {
+        margin-bottom: 30px;
+    }
+    
+    /* İstatistik grid */
+    .row.text-center .col-4 {
+        margin-bottom: 15px;
+    }
+    
+    /* Footer mobil */
+    footer .row .col-lg-4 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    /* Form grupları */
+    .form-row {
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablet düzenlemeleri */
+@media (max-width: 992px) and (min-width: 769px) {
+    .hero-section .display-4 {
+        font-size: 2.2rem;
+    }
+    
+    .custom-image-container {
+        height: 300px;
+    }
+}
